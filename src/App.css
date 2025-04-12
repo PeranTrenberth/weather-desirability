@@ -1,0 +1,125 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom right, #dff1ff, #ffffff);
+  color: #333;
+  min-height: 100vh;
+}
+
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #0077b6;
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.search-box input {
+  padding: 0.75rem;
+  width: 60%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 8px 0 0 8px;
+  font-size: 1rem;
+}
+
+.search-box button {
+  padding: 0.75rem 1.25rem;
+  border: none;
+  background-color: #00b4d8;
+  color: white;
+  border-radius: 0 8px 8px 0;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.search-box button:hover {
+  background-color: #0077b6;
+}
+
+.error {
+  color: red;
+  margin-bottom: 1rem;
+}
+
+.results {
+  text-align: left;
+  background-color: #ffffffee;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.activity-card {
+  background: #f0f8ff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-left: 6px solid #0077b6;
+  border-radius: 8px;
+}
+
+.activity-card h3 {
+  margin: 0 0 0.5rem;
+  color: #023e8a;
+}
+
+.activity-card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.activity-card li {
+  padding: 0.25rem 0;
+  font-size: 0.95rem;
+  color: #333;
+}
